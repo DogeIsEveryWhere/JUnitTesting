@@ -6,7 +6,7 @@ import poker.Poker;
 
 public class PokerTest {
 	private Poker poker;
-    /**d
+    /**daasd
      * Sets up the test fixture.
      * Called before every test case method.
      */
@@ -83,4 +83,11 @@ public class PokerTest {
 		result = poker.isFullHouse(input, 5);
 		assertEquals(false, result);
 	}
+	@Test
+	public void test_case_3() {
+		boolean result;
+		String[] input = new String[] {"CA", "DX", "HX", "SX", "DK"};
+		result = poker.isFullHouse(input, 5);
+		assertEquals(false, result);
+	}//abcd
 }
